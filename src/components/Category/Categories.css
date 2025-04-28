@@ -1,0 +1,59 @@
+/* .categories-page {
+    padding: 20px;
+    background: #f4f4f4;
+  }
+  
+  .category-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .category-list button {
+    padding: 10px 20px;
+    border: none;
+    background: #1e2a38;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 8px;
+  }
+  
+  .category-list button:hover,
+  .category-list button.active {
+    background: #f7931e;
+  }
+  
+  .house-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+  }
+  
+  .house-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    transition: 0.3s;
+  }
+  
+  .house-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .house-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: #f7931e;
+  }
+  
+  .location {
+    color: #777;
+  }
+   */

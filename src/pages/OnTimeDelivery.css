@@ -1,0 +1,118 @@
+/* OnTimeDelivery.css */
+.on-time-delivery-container {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .intro-section {
+    background-color: #1e2a38;
+    color: white;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .intro-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+  }
+  
+  .intro-text {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  .delivery-process {
+    padding: 40px;
+    background-color: white;
+    text-align: center;
+  }
+  
+  .delivery-process h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #1e2a38;
+  }
+  
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  
+  .step-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .step-box h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #f7931e;
+  }
+  
+  .step-box p {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  
+  .why-us {
+    background-color: #f9f9f9;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .why-us h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #1e2a38;
+  }
+  
+  .why-us ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2em;
+  }
+  
+  .why-us li {
+    margin: 10px 0;
+  }
+  
+  .contact-section {
+    background-color: #1e2a38;
+    color: white;
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .contact-section h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+  }
+  
+  .contact-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    background-color: #f7931e;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #e47d1d;
+  }
+  

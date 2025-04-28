@@ -1,0 +1,379 @@
+/* Общие стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #1e2a38;
+  line-height: 1.6;
+  font-size: 16px;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Заголовки и текст */
+h1, h2, h3, h4 {
+  font-weight: 600;
+  color: #1e2a38;
+  transition: transform 0.5s ease-in-out;
+}
+
+h1 {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  animation: slideIn 1.5s ease-out, glow 2s infinite alternate;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  animation: bounceIn 1s ease-out;
+}
+
+h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #555;
+  transition: transform 0.3s ease-out;
+}
+
+/* Анимации для заголовков */
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 165, 0, 0.7);
+  }
+  100% {
+    text-shadow: 0 0 20px rgba(255, 165, 0, 1);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Заголовок страницы */
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.header p {
+  font-size: 18px;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  transition: opacity 0.3s ease-out;
+}
+
+.header p:hover {
+  opacity: 0.7;
+}
+
+/* Достижения */
+.achievement-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.achievement-box {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 30%;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease, scale 0.3s ease;
+}
+
+.achievement-box:hover {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.15);
+  background-color: #f7931e;
+  color: #fff;
+  animation: shake 1s ease;
+}
+
+.achievement-box h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #f7931e;
+  transition: color 0.3s ease;
+  animation: pulse 1.5s infinite;
+}
+
+.achievement-box p {
+  font-size: 18px;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.achievement-box:hover h2, .achievement-box:hover p {
+  color: #fff;
+}
+
+/* Пульсация для заголовков */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Статистика компании */
+.stats-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.stats-box {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.stats-card {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
+  width: 30%;
+  position: relative;
+}
+
+.stats-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.15);
+  background-color: #f7931e;
+  color: #fff;
+}
+
+.circle-box {
+  background-color: #f7931e;
+  color: #fff;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px auto;
+  font-size: 30px;
+  transition: transform 0.3s ease;
+}
+
+.stat-circle {
+  font-weight: 700;
+}
+
+.stats-card h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.stats-card p {
+  font-size: 16px;
+  color: #777;
+}
+
+.stats-card:hover .circle-box {
+  transform: rotate(360deg);
+}
+
+/* Шейк-анимейшн */
+@keyframes shake {
+  0% { transform: rotate(5deg); }
+  25% { transform: rotate(-5deg); }
+  50% { transform: rotate(5deg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* О нас */
+.about-section {
+  background-color: #fff;
+  padding: 60px 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  margin-bottom: 60px;
+  transition: transform 0.3s ease;
+}
+
+.about-section:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.about-section p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  transition: transform 0.4s ease-out;
+}
+
+.about-section:hover p {
+  transform: scale(1.05);
+}
+
+/* Отзывы клиентов */
+.testimonials-section {
+  margin-bottom: 60px;
+}
+
+.testimonials-section h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  text-align: center;
+  animation: bounceIn 1s ease-out;
+}
+
+.testimonial {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: fadeInFromBottom 1s ease-out;
+}
+
+.testimonial:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial p {
+  font-size: 20px;
+  color: #555;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.testimonial h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e2a38;
+}
+
+.testimonial:hover p {
+  color: #f7931e;
+}
+
+/* Анимация появления отзывов */
+@keyframes fadeInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer */
+.footer-section {
+  background-color: #1e2a38;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.footer-section p {
+  font-size: 18px;
+  color: #bbb;
+}
+
+.footer-section p:first-child {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* Анимация наведения на ссылки */
+footer a {
+  color: #f7931e;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer a:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+  .achievement-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stats-box {
+    flex-direction: column;
+  }
+
+  .stats-card {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .about-section {
+    padding: 40px 20px;
+  }
+
+  .testimonial {
+    width: 80%;
+    margin: 0 auto 30px;
+  }
+}

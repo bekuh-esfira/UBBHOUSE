@@ -1,0 +1,181 @@
+/* Общие стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Секции */
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e2a38;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.section-description {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Карточки новостей */
+.news-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: linear-gradient(to right, #f0f0f0, #fff);
+}
+
+.news-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+}
+
+.news-card-img img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 3px solid #f7931e;
+}
+
+.news-card-content {
+  padding: 20px;
+  color: #333;
+}
+
+.news-card-content h3 {
+  font-size: 1.5rem;
+  color: #1e2a38;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.news-card-content p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Стили для зеленого строительства */
+.green-building-section, .eco-materials-section {
+  background-color: #e4f3e4;
+  padding: 50px 0;
+}
+
+.green-card, .eco-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.green-card:hover, .eco-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+}
+
+.green-card h3, .eco-card h3 {
+  font-size: 1.6rem;
+  color: #1e2a38;
+  margin-bottom: 10px;
+}
+
+.green-card p, .eco-card p {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Анимации для карт */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Применение анимации ко всем карточкам */
+.news-card, .green-card, .eco-card {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.news-card:nth-child(1), .green-card:nth-child(1), .eco-card:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.news-card:nth-child(2), .green-card:nth-child(2), .eco-card:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+.news-card:nth-child(3), .green-card:nth-child(3), .eco-card:nth-child(3) {
+  animation-delay: 0.9s;
+}
+
+/* Кнопки */
+.btn {
+  background-color: #f7931e;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e47d1d;
+  transform: scale(1.05);
+}
+
+.btn:active {
+  transform: scale(1);
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 5px 2px rgba(247, 147, 30, 0.5);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .news-card, .green-card, .eco-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .news-card-img img {
+    height: 200px;
+  }
+}

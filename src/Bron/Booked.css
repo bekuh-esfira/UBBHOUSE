@@ -1,0 +1,180 @@
+.booked {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #13942b 0%, #114006 100%);
+    /* min-height: 100vh; */
+    color: #14ab19;
+  }
+  
+  .booked h2 {
+    font-size: 2.8rem;
+    color: #f39c12;
+    text-align: center;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  .booked-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+  }
+  
+  .booked-card {
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    border: 2px solid #f39c12;
+  }
+  
+  .booked-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  .booked-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 3px solid #f39c12;
+  }
+  
+  .booked-card h3 {
+    font-size: 1.6rem;
+    color: #2c3e50;
+    margin: 20px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  
+  .booked-card p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin: 0 20px 15px;
+    line-height: 1.6;
+    text-align: center;
+  }
+  
+  .booked-card p:last-of-type {
+    font-weight: 700;
+    color: #e74c3c;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .booked-card button {
+    display: block;
+    width: calc(100% - 40px);
+    margin: 0 auto 20px;
+    padding: 12px;
+    background: linear-gradient(90deg, #f39c12, #e67e22);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .booked-card button:hover {
+    background: linear-gradient(90deg, #e67e22, #d35400);
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .booked-card button:active {
+    transform: scale(0.97);
+  }
+  
+  .no-bookings {
+    font-size: 1.8rem;
+    color: #bdc3c7;
+    text-align: center;
+    margin-top: 60px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    font-style: italic;
+    border: 1px dashed #f39c12;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .booked h2 {
+      font-size: 2.2rem;
+    }
+  
+    .booked-list {
+      grid-template-columns: 1fr;
+    }
+  
+    .booked-card img {
+      height: 200px;
+    }
+  
+    .booked-card h3 {
+      font-size: 1.4rem;
+    }
+  
+    .booked-card p {
+      font-size: 1rem;
+    }
+  
+    .booked-card button {
+      font-size: 1rem;
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .booked {
+      padding: 30px 15px;
+    }
+  
+    .booked h2 {
+      font-size: 1.8rem;
+      gap: 8px;
+    }
+  
+    .booked-card img {
+      height: 180px;
+    }
+  
+    .booked-card h3 {
+      font-size: 1.3rem;
+      margin: 15px;
+    }
+  
+    .booked-card p {
+      font-size: 0.95rem;
+      margin: 0 15px 10px;
+    }
+  
+    .booked-card button {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+  
+    .no-bookings {
+      font-size: 1.4rem;
+      padding: 20px;
+    }
+  }

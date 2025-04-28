@@ -1,0 +1,203 @@
+/* Общий контейнер — стиль с волнами и более светлой атмосферой */
+.auth-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #ffecd2 0%, #fcb69f 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  animation: fadeWave 1.4s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Волны */
+.auth-container::before {
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  background: url('https://www.transparenttextures.com/patterns/wavecut.png');
+  opacity: 0.04;
+  animation: drift 60s linear infinite;
+}
+
+/* Заголовок */
+h2 {
+  font-size: 36px;
+  color: #ff6a00;
+  margin-bottom: 25px;
+  animation: dropIn 0.8s ease-out;
+  letter-spacing: 1px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+  max-width: 360px;
+  background-color: #fff;
+  padding: 32px 28px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  animation: slideUp 0.8s ease forwards;
+}
+
+.auth-form input {
+  padding: 14px 18px;
+  border-radius: 12px;
+  border: 2px solid #ffd5c2;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  background-color: #fff8f4;
+  color: #333;
+}
+
+.auth-form input:focus {
+  outline: none;
+  border-color: #ff974d;
+  box-shadow: 0 0 8px rgba(255, 153, 0, 0.2);
+}
+
+.auth-form button {
+  padding: 14px 20px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(45deg, #ff6a00, #ffb347);
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.auth-form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 107, 0, 0.3);
+}
+
+.cute-animal {
+  width: 110px;
+  height: 110px;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/616/616408.png');
+  background-size: cover;
+  margin-bottom: 18px;
+  animation: bounce 2.5s ease-in-out infinite;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
+  cursor: pointer;
+}
+.auth-container {
+  position: relative;
+  padding: 40px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+  margin: 100px auto;
+  overflow: hidden;
+}
+
+.success-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.success-content {
+  text-align: center;
+}
+.success-content h5{
+  font-size: 18px;
+}
+
+.success-image {
+  width: 120px;
+  margin-bottom: 20px;
+  animation: bounce 1s infinite alternate;
+}
+
+.typewriter-text {
+  overflow: hidden;
+  border-right: .15em solid orange; 
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .1em;
+  animation: typing 2s steps(30, end), blink-caret .75s step-end infinite;
+  font-size: 22px;
+  color: #333;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.confetti {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://i.gifer.com/7efs.gif'); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+@keyframes fadeWave {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes dropIn {
+  from { transform: translateY(-25px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes drift {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
