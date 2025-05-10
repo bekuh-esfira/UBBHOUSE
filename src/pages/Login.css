@@ -1,4 +1,4 @@
-/* Общий контейнер — стиль с волнами и более светлой атмосферой */
+
 .auth-container {
   min-height: 100vh;
   background: linear-gradient(to bottom, #ffecd2 0%, #fcb69f 100%);
@@ -14,7 +14,6 @@
   overflow: hidden;
 }
 
-/* Волны */
 .auth-container::before {
   content: '';
   position: absolute;

@@ -1,4 +1,4 @@
-/* Rentals.css */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -144,7 +144,7 @@ body {
     color: #444;
   }
   
-  /* Кнопка закрытия */
+
   .close-btn {
     position: absolute;
     top: 10px;

@@ -159,16 +159,16 @@
 
 .district-button.booked {
   background-color: #16a34a;
-  padding: 8px 16px; /* Сохраняем тот же padding, что у .district-button */
-  border-radius: 6px; /* Сохраняем тот же border-radius */
-  font-size: 14px; /* Сохраняем тот же font-size */
+  padding: 8px 16px; 
+  border-radius: 6px; 
+  font-size: 14px; 
   cursor: not-allowed;
-  color: white; /* Сохраняем цвет текста */
+  color: white; 
 }
 
 .district-button.booked:hover {
   background-color: #15803d;
-  transform: none; /* Отключаем эффект масштабирования при наведении */
+  transform: none; 
 }
 
 .modal-overlay {

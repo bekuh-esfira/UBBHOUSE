@@ -132,7 +132,6 @@ nav a:hover h3 {
   border-radius: 5px;
 }
 
-/* Hover эффект */
 .span h3:hover {
   color: #f7931e;
   background-color: rgba(247, 147, 30, 0.1);
@@ -234,7 +233,6 @@ nav a:hover h3 {
   padding: 5px;
   font-size: 14px;
 }
-/* Медиа-запрос для планшетов (ширина экрана до 1024px) */
 @media screen and (max-width: 1024px) {
   .banner {
     width: 100% !important;
@@ -296,8 +294,6 @@ nav a:hover h3 {
     right: 10px;
   }
 }
-
-/* Медиа-запрос для телефонов (ширина экрана до 768px) */
 @media screen and (max-width: 768px) {
   .header {
     padding: 10px 0;
@@ -365,7 +361,7 @@ nav a:hover h3 {
   }
 }
 .menu-toggle {
-  display: none; /* скрываем иконку по умолчанию */
+  display: none; 
 }
 
 @media (max-width: 768px) {

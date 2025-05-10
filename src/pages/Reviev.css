@@ -85,14 +85,12 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Список отзывов */
 .review-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 25px;
 }
 
-/* Карточка */
 .review-card {
   background: #fff url('/images/house-icon-light.png') no-repeat bottom right;
   background-size: 100px;
@@ -111,7 +109,6 @@
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
 }
 
-/* Заголовок с именем и звёздами */
 .review-header {
   display: flex;
   justify-content: space-between;
@@ -129,14 +126,12 @@
   font-size: 18px;
 }
 
-/* Локация или проект */
 .location {
   font-size: 14px;
   color: #999;
   margin: 8px 0 10px;
 }
 
-/* Текст */
 .review-card p {
   font-size: 16px;
   color: #444;

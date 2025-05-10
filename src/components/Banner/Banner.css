@@ -184,7 +184,6 @@
   box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
 
-/* Анимации */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateX(-20px); }
   to { opacity: 1; transform: translateX(0); }
@@ -292,7 +291,6 @@
 
 
 
-/* Медиа-запрос для планшетов (ширина экрана до 1024px) */
 @media screen and (max-width: 1024px) {
   .content-wrapper {
     flex-direction: column;
@@ -340,7 +338,6 @@
   }
 }
 
-/* Медиа-запрос для телефонов (ширина экрана до 768px) */
 @media screen and (max-width: 768px) {
   .main {
     padding: 20px 10px;
